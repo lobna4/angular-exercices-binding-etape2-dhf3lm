@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Exercices Angular</h1>
+
+  <h2>Tester le Two Way Data Binding</h2>
+
+  <input type="text" placeholder="Saisie ton prénom" [(ngModel)]="yourName" />
+  <p *ngIf="yourName">Bienvenue {{ yourName }}</p>
+
+  <h2>Mini App</h2>
+
+  <app-search-bar (eventRecupTexteInput)="afficherTexteInputRecu($event)"></app-search-bar>
+  <app-filter-selector></app-filter-selector>
+  <app-data-table [dataUser]="data"></app-data-table>
+</div>
